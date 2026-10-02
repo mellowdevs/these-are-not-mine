@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I didn’t take these photographs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@500;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app"></div>
+
+<dialog id="lb" aria-label="Frame">
+  <div class="lb">
+    <div class="lb-img"><img id="lb-img" alt=""></div>
+    <div class="lb-bar">
+      <div class="lb-text" aria-live="polite">
+        <p class="lb-who" id="lb-who"></p>
+        <p class="lb-n" id="lb-n"></p>
+        <p class="lb-cap" id="lb-cap"></p>
+      </div>
+      <div class="lb-nav">
+        <button type="button" id="lb-prev">Previous frame</button>
+        <button type="button" id="lb-next">Next frame</button>
+        <button type="button" id="lb-close">Close</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script src="content.js"></script>
+<script src="photos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
